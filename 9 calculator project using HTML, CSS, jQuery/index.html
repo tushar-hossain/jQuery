@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator Project</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <h1>Calculator</h1>
+        <div class="resultText">
+          <input type="text" id="resultInput" maxlength="10" />
+        </div>
+
+        <div class="card-body">
+          <div>
+            <input type="button" id="inputValue" value="C" onclick="deleteValue()" />
+            <input type="button" id="inputValue" value="+/-" />
+            <input type="button" id="inputValue" value="%" onclick="addingValue('%')" />
+            <input type="button" id="inputMult" value="/" onclick="addingValue('/')" />
+          </div>
+          <div>
+            <input type="button" id="inputValue" value="7" onclick="resultValue(7)" />
+            <input type="button" id="inputValue" value="8" onclick="resultValue(8)" />
+            <input type="button" id="inputValue" value="9" onclick="resultValue(9)" />
+            <input type="button" id="inputMult" value="x" onclick="addingValue('*')" />
+          </div>
+          <div>
+            <input type="button" id="inputValue" value="4" onclick="resultValue(4)" />
+            <input type="button" id="inputValue" value="5" onclick="resultValue(5)" />
+            <input type="button" id="inputValue" value="6" onclick="resultValue(6)" />
+            <input type="button" id="inputMult" value="-" onclick="addingValue('-')" />
+          </div>
+          <div>
+            <input type="button" id="inputValue" value="1" onclick="resultValue(1)" />
+            <input type="button" id="inputValue" value="2" onclick="resultValue(2)" />
+            <input type="button" id="inputValue" value="3" onclick="resultValue(3)" />
+            <input type="button" id="inputMult" value="+" onclick="addingValue('+')" />
+          </div>
+          <div>
+            <input type="button" id="inputValue" value="0" onclick="resultValue(0)" />
+            <input type="button" id="inputValue" value="." onclick="resultValue('.')" />
+            <input type="button" id="inputValue" value="DEL" onclick="deleteElement()"/>
+            <input type="button" id="inputMult" value="=" onclick="result()" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
