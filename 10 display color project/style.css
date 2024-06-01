@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.conatiner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.display {
+  width: 25rem;
+  height: 5rem;
+  background-color: aliceblue;
+  border-radius: 0.6rem;
+}
+.card {
+  text-align: center;
+  padding: 1rem;
+}
+#hexColor {
+  padding: 0.3rem;
+  margin: 0.5rem;
+  border-radius: 0.3rem;
+  outline: none;
+  border: none;
+  box-shadow: 0 0 2px rgb(0, 0, 0.2);
+}
+#hexColor:focus {
+  border: none;
+  box-shadow: 0 0 4px rgb(0, 0, 0.2);
+}
+button {
+  padding: 0.3rem;
+  border-radius: 0.3rem;
+  outline: none;
+  border: none;
+  box-shadow: 0 0 2px rgb(0, 0, 0.2);
+}
+button:focus {
+  border: none;
+  box-shadow: 0 0 4px rgb(0, 0, 0.2);
+}
